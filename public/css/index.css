@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0 15%;
+    width: 70%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    color: rgb(28, 30, 55);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2vw;
+    color: rgb(28, 30, 55);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    color: #1C1E37;
+}
+
+/*________________HEADER_________________*/
+
+.fondo-violeta{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 30, 55, 0.95);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    /* background-color: rgba(28, 30, 55, 0.95); */
+    padding: 0 3%;
+    z-index: 1;
+}
+
+.header-logo {
+    width: 12%;
+    visibility: hidden;
+}
+
+.header-fixed {
+    position: fixed;
+    background-color: rgb(28, 30, 55);
+}
+
+.header-logo-fixed {
+    visibility: visible;
+}
+
+nav {
+    width: 25%;
+}
+
+.nav-elements {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.1vw;
+}
+
+.nav-element {
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 3vh;
+}
+
+.nav-element:hover {
+    cursor: pointer;
+}
+
+.nav-contacto {
+    background-color: white;
+    padding: 3.5vh 0.5vw;
+    color: rgb(28, 30, 55);
+}
+
+.header-mobile {
+    display: none;
+}
+
+/*_______________PORTADA_________________*/
+
+.section-portada {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0;
+    width: 100%;
+    height: 90vh;
+    /* background-color: rgba(28, 30, 55, 0.95); */
+}
+
+.fondo-pomelos {
+    background-image: url("../img/fondo-pomelos.jpg");
+}
+
+.portada-contenido {
+    padding: 30vh 15%;
+    width: 70%;
+    height: 30vh;
+}
+
+.portada-logo {
+    width: 30%;
+}
+
+.portada-texto {
+    color: white;
+    width: 30%;
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.citrico {
+    background-color: #ff5c5c;
+    padding: 0 1%;
+}
+
+/*____________INTRO_______________*/
+
+.section-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    margin: 10% 0;
+    height: 60vh;
+}
+
+.section-intro p {
+    font-size: 2vw;
+}
+
+.section-intro button {
+    padding: 1%;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3%;
+    background-color: #FF5C5C;
+    color: #ffffff;
+    border: none;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.section-intro button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*____________SERVICIOS___________*/
+
+.section-services, .section-portfolio {
+    margin: 10% 0;
+}
+
+.services-title {
+    margin-bottom: 6%;
+    opacity: 0;
+}
+
+.tablet-mobile {
+    display: none;
+}
+
+.circle-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 17vw;
+    width: 17vw;
+}
+
+.circle img {
+    width: 30%;
+}
+
+.info-div {
+    width: 96%;
+    margin: 8% 2%;
+}
+
+.info-div p {
+    margin: 1% 10%;
+}
+
+.circle, .info-div {
+    flex-flow: column;
+}
+
+.circles, .circle, .info, .info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cyan {
+    background-color: rgba(0, 255, 255, 0.7);
+}
+
+.magenta {
+    background-color: rgba(255, 0, 255, 0.7);
+}
+
+.yellow {
+    background-color: rgba(255, 255, 1, 0.7);
+}
+
+/*______________PORTFOLIO_________________*/
+
+.section-portfolio {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-title {
+    opacity: 0;
+    margin-top: 2%;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.container {
+    width: 35vh;
+    height: 35vh;
+}
+
+.inside{
+    background-color: rgba(75,75,75,0.9);
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inside h3{
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    text-align: center;
+}
+
+.inside p{
+    color:white;
+    text-align: center;
+    width: 80%;
+}
+
+.inside a, .inside a:visited{
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 1% 3%;
+    margin-top: 5%;
+}
+
+.inside-visible{
+    visibility: visible;
+}
+
+.container:hover {
+    transform: scale(1.03);
+} 
+
+.huarpes-1{
+    background-image: url('../img/Huarpesweb1.png');
+    background-size: cover;
+}
+.fausto-1{
+    background-image: url('../img/Faustoweb1.png');
+    background-size: cover;
+
+}
+.huarpes-2{
+    background-image: url('../img/Huarpesweb2.png');
+    background-size: cover;
+
+}
+.fausto-2{
+    background-image: url('../img/Faustoweb2.png');
+    background-size: cover;
+    
+}
+.huarpes-3{
+    background-image: url('../img/Huarpesweb3.png');
+    background-size: cover;
+
+}
+.fausto-3{
+    background-image: url('../img/Faustoweb3.png');
+    background-size: cover;
+    
+}
+
+/*_____________NOSOTROS__________________*/
+
+.section-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+
+.nosotros-title {
+    color: #1C1E37;
+    font-size: 3vw;
+    opacity: 0;
+    margin-bottom: 3%;
+}
+
+.nosotros-contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nosotros-izquierda {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.nosotros-derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.nosotros-iconos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.nosotros-icono {
+    width: 10%;
+}
+
+.icono-express {
+    color: rgb(28, 30, 55);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.7vw;
+}
+
+.map {
+    background-image: url("../img/mendoza.jpg");
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+.violet-map {
+    background-color: rgba(28, 30, 55, 0.6);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+/*_____________CONTACTO________________*/
+
+.section-contacto {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1E37;
+}
+
+.contacto-izquierda {
+    width: 40%;
+    height: 50vh;
+}
+
+.contacto-title {
+    color: white;
+    font-size: 3vw;
+    margin-bottom: 3%;
+    opacity: 0;
+}
+
+.contacto-text {
+    color: white;
+}
+
+form {
+    width: 30vw;
+    height: 50vh;
+}
+
+.form-element {
+    display: block;
+    width: 28vw;
+    height: 10%;
+    margin: 3% 0;
+    padding: 2% 1vw;
+    background-color: #373951;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-area {
+    height: 30%;
+}
+
+
+.form-button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #1C1E37;
+    border: none;
+    padding: 2% 1vw;
+    background-color: white;
+}
+
+.form-send-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-send-message {
+    color: white;
+    width: 60%;
+    font-weight: 800;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    visibility: visible;
+}
+
+/*_______________FOOTER__________________*/
+
+.footer {
+    height: 10vh;
+    background-color: #FF5C5C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 3%;
+}
+
+.credits {
+    padding: 0.5% 3%;
+    text-align: center;
+    background-color: #FF5C5C;
+    color: white;
+    font-size: 0.8vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+.credits a {
+    color: white;
+    text-decoration: none;
+}
+
+.direccion {
+    width: 20%;
+}
+
+.direccion-element {
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.direccion-element p {
+    color: white;
+}
+
+.direccion-logo {
+    width: 8%;
+    margin-right: 5%;
+}
+
+.redes {
+    width: 15%;
+}
+
+.redes-logo {
+    width: 15%;
+    margin: 0 2%;
+}
+
+.redes-logo:hover{
+    cursor: pointer;
+}
+
+.logo-footer {
+    width: 12%;
+}
+
+.footer .direccion .direccion-element p {
+    color: #ffffff;
+}
+
+/*____________ANIMACIONES_________________*/
+
+.title-visible {
+    animation-name: title-visible;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title-visible {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*_______________________________________*/
+
+/*__________RESPONSIVE MAX 768___________*/
+
+/*_______________________________________*/
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+    p {
+        font-size: 2.2vw;
+    }
+    /*HEADER 768*/
+    .header-logo {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+    header {
+        padding: 0 0;
+    }
+    .header-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 94%;
+        height: 10vh;
+        padding: 0 3%;
+    }
+    .header-mobile-logo {
+        width: 25%;
+        visibility: hidden;
+    }
+    .nav-elements {
+        justify-content: center;
+    }
+    /*nav*/
+    .nav-element {
+        display: none;
+    }
+    .header-nav-show {
+        height: 50vh;
+        position: fixed;
+    }
+    .nav-elements {
+        flex-direction: column;
+        font-size: 3vw;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav-element-nav-show {
+        font-size: 3vw;
+        display: block;
+        height: 9.8vh;
+        background-color: rgba(28, 30, 55, 0.9);
+        border: 0.1vh solid rgb(37, 38, 61);
+        width: 100%;
+        margin-left: 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-contacto-nav-show {
+        padding: 0 0;
+    }
+    .menu-button-part {
+        width: 35px;
+        height: 1vh;
+        margin-bottom: 3px;
+        background-color: #ff5c5c;
+    }
+    /* INTRO */
+    .section-intro p {
+        font-size: 4vw;
+    }
+    .section-intro button {
+        padding: 3%;
+        font-size: 2vw;
+        margin-top: 10%;
+    }
+    /*PORTADA 768*/
+    .portada-contenido {
+        padding: 30vh 15%;
+        width: 70%;
+        height: 30vh;
+    }
+    .portada-contenido-nav-show {
+        padding: 40vh 15% 30vh 15%;
+    }
+    .portada-logo {
+        width: 60%;
+    }
+    .portada-texto {
+        color: white;
+        width: 60%;
+        font-size: 5vw;
+    }
+    /*SERVICIOS 768*/
+    .services-content, .portfolio-content {
+        margin-top: 10%;
+    }
+    .section-services {
+        padding-top: 5vh;
+    }
+    .services-title {
+        margin-top: 0;
+    }
+    .desktop {
+        display: none;
+    }
+    .tablet-mobile {
+        display: flex;
+        justify-content: center;
+    }
+    .tablet-mobile .circles {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle {
+        height: 50vw;
+        width: 100%;
+        margin: 3% 0;
+        border-radius: 0;
+    }
+    .circle h2 {
+        color: black;
+        margin: 2% 0;
+        font-size: 4vw;
+    }
+    .circle img {
+        width: 20%;
+    }
+    .circle p {
+        margin: 0 10%;
+    }
+    /*PORTFOLIO 768*/
+    .section-portfolio {
+        min-height: 90vh;
+    }
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 0 0;
+    }
+    .portfolio-content .img-display {
+        display: none;
+    }
+
+    .container{
+        width:35vw;
+        height: 35vw;
+    }
+    /*NOSOTROS 768*/
+    .section-nosotros {
+        min-height: 70vh;
+    }
+    .nosotros-title {
+        font-size: 6vw;
+    }
+    .nosotros-derecha {
+        display: none;
+    }
+    .nosotros-izquierda {
+        width: 100%;
+    }
+    .nosotros-iconos {
+        margin-top: 5%;
+    }
+    /*CONTACTO 768*/
+    .section-contacto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .contacto-izquierda {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .contacto-title {
+        font-size: 6vw;
+    }
+    form {
+        width: 98%;
+        height: auto;
+    }
+    .form-element {
+        width: 100%;
+        font-size: 2.2vw;
+    }
+    .form-button{
+        font-size: 2.2vw;
+        margin: 0;
+        /* margin-top: 5%; */
+    }
+    /*FOOTER 768*/
+    .footer{
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+    .logo-footer {
+        display: none;
+    }
+    .direccion-logo {
+        display: none;
+    }
+    .redes {
+        width: 40%;
+        text-align: right;
+    }
+    .redes-logo {
+        width: 15%;
+    }
+    .credits{
+        font-size: 1.5vw;
+    }
+}
+
+/*_______________________________________*/
+
+/*__________RESPONSIVE MAX 480___________*/
+
+/*_______________________________________*/
+
+@media (max-width: 480px) {
+    p {
+        font-size: 4.2vw;
+    }
+    h1 {
+        font-size: 9vw;
+    }
+    /*HEADER 480*/
+    .nav-element-nav-show {
+        font-size: 5vw;
+    }
+    .header-mobile-logo {
+        width: 40%;
+        visibility: hidden;
+    }
+    /* INTRO */
+    .section-intro p {
+        font-size: 6vw;
+    }
+    .section-intro button {
+        padding: 4%;
+        font-size: 4vw;
+        margin-top: 10%;
+    }
+    /*SERVICIOS 480*/
+    .circle {
+        height: 65vw;
+        width: 100%;
+    }
+    .circle h2 {
+        font-size: 6vw;
+    }
+    .tablet-mobile {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    /*NOSOTROS 480*/
+    .nosotros-title {
+        font-size: 9vw;
+    }
+    .nosotros-contenido {
+        margin-top: 10%;
+    }
+    .nosotros-iconos {
+        margin-top: 5%;
+    }
+    /*CONTACTO 468*/
+    .contacto-izquierda {
+        height: auto;
+    }
+    .contacto-title {
+        font-size: 9vw;
+    }
+    .form-element {
+        font-size: 4.2vw;
+    }
+    .form-button{
+        font-size: 3.2vw;
+    }
+    /*FOOTER 468*/
+    .redes {
+        width: 40%;
+    }
+    .redes-logo {
+        width: 25%;
+    }
+    .credits{
+        font-size: 2.0vw;
+    }
+}
